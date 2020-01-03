@@ -22,5 +22,9 @@ k=363
 d=509
 ```
 
+## Credits
+https://www.cits.ruhr-uni-bochum.de/imperia/md/content/may/krypto2ss08/shortsecretexponents.pdf
+https://github.com/orisano/owiener/blob/master/owiener.py
+
 ## License
 MIT

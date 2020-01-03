@@ -29,7 +29,7 @@ def cf(n: int, d: int) -> List[int]:
 
 def cf_to_convergent(cfe: list) -> Tuple[int, int]:
     """
-    cfe: continued fraction expansion, a list
+    cfe: continued fraction expansion
     ref: https://www.cits.ruhr-uni-bochum.de/imperia/md/content/may/krypto2ss08/shortsecretexponents.pdf (6)
     ref: https://github.com/orisano/owiener/blob/master/owiener.py
     """
