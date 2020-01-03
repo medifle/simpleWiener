@@ -1,4 +1,4 @@
-from .simpleWiener import simple_wiener_attack, cf, cf_to_convergent
+from .core import simple_wiener_attack, cf, cf_to_convergent
 
 ##
 # test

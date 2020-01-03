@@ -47,6 +47,7 @@ def cf_to_convergent(cfe: list) -> Tuple[int, int]:
 
 
 def is_square(n: int) -> bool:
+    # isqrt is a new feature in python3.8
     return math.isqrt(n) ** 2 == n
 
 
@@ -57,13 +58,13 @@ def check_phi(_k: int, _d: int, e: int, n: int, round: int = 10) -> bool:
         if k != 0 and (e * d - 1) % k == 0:
             phi = (e * d - 1) // k
             sum_pq = n - phi + 1
-            # we know p+q and pq, solve the quadratic equation using high school knowledge:
-            # given ax^2 - bx + c = 0, x = (-b ± sqrt(b^2 - 4ac))/2a
-            # we only need to know the solution x is an integer
-            # so we use is_square(...) to test if p and q are integer solution
-            # btw, p+q should be an even number if we assume none of p or q is 2
+            # We know p+q and pq, solve the quadratic equation using high school knowledge:
+            # Given ax^2 - bx + c = 0, x = (-b ± sqrt(b^2 - 4ac))/2a
+            # We only need to know if the solution x is an integer
+            # We use is_square(...) to test if p and q are integer solution
+            # BTW, p+q should be an even number if we assume none of p or q is 2
             if sum_pq % 2 == 0 and is_square((sum_pq // 2) ** 2 - n):
-                print("\nphi={}\nk={}\nd={}".format(phi, k, d))
+                print("\nphi={}\nk={}\nd={}\n".format(phi, k, d))
                 return True
     return False
 
@@ -86,4 +87,4 @@ if __name__ == '__main__':
         n = int(sys.argv[2])
         simple_wiener_attack(e, n)
     else:
-        print("Usage: python3 simpleWiener.py e n")
+        print("Usage: python3 -m simpleWiener.core e n")

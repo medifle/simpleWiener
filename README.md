@@ -5,13 +5,15 @@ A simple and fast implementation of Wiener's attack against small RSA exponent `
 Python 3.8.0+
 
 ## Usage
-```bash
-python3 simpleWiener.py e n
+`cd` to the root of this repository and run the following in your terminal:
 ```
+python3 -m simpleWiener.core e n
+```
+`e` and `n` are usually large integers you already know
 
 ## Example
 ```bash
-python3 simpleWiener.py 9292162750094637473537 13029506445953503759481
+python3 -m simpleWiener.core 9292162750094637473537 13029506445953503759481
 ```
 output:
 ```
