@@ -2,7 +2,7 @@
 A simple and fast implementation of Wiener's attack against small RSA exponent `d`
 
 ## Requirement
-Python 3.8.0+
+![shield](https://img.shields.io/badge/python-3.8.0%2B-blue)
 
 ## Usage
 `cd` to the root of this repository and run the following in your terminal:
